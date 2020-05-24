@@ -283,13 +283,13 @@ function initPlaylist(songs_array, user_id1, token1) {
   token = token1;
   for (var i = 0; i < songs_array.length; i++) {
     songAnalyzer(songs_array[i]);
-    if (i < 20) {
-      real_final_playlist_array.push(songs_array[i]);
-      console.log(songs_array[i].track.name);
-    }
+    // if (i < 20) {
+    //   real_final_playlist_array.push(songs_array[i]);
+    //   console.log(songs_array[i].track.name);
+    // }
   }
   for (var i = 0; i < real_final_playlist_array.length; i++) {
-    final_playlist_array_ids.push(real_final_playlist_array[i].id);
+    final_playlist_array_ids.push(final_playlist_array[i].id);
   }
   const baseUrl = `https://embed.spotify.com/?theme=white&uri=spotify:trackset:A New Playlist:${
     final_playlist_array_ids.join()}`;
@@ -348,38 +348,38 @@ function songAnalyzer(song) {
 
 
     function myFunction1() {
-      // acousticness = document.getElementById("InputId1").value / 100 //gets the oninput value
-      acousticness = 0.5;
+      acousticness = document.getElementById("InputId1").value / 100 //gets the oninput value
+      //acousticness = 0.5;
       document.getElementById('OutputId1').innerHTML = acousticness //displays this value to the html page
     }
 
     function myFunction2() {
-      // instrumentalness = document.getElementById("InputId2").value / 100 //gets the oninput value
-      instrumentalness = 0.5;
+      instrumentalness = document.getElementById("InputId2").value / 100 //gets the oninput value
+      //instrumentalness = 0.5;
       document.getElementById('OutputId2').innerHTML = instrumentalness //displays this value to the html page
     }
 
     function myFunction3() {
-      tempo = 75;
-      // tempo = document.getElementById("InputId3").value //gets the oninput value
+      //tempo = 75;
+      tempo = document.getElementById("InputId3").value //gets the oninput value
       document.getElementById('OutputId3').innerHTML = tempo //displays this value to the html page
     }
 
     function myFunction4() {
-      danceability = 0.5;
-      // danceability = document.getElementById("InputId4").value / 100 //gets the oninput value
+      //danceability = 0.5;
+      danceability = document.getElementById("InputId4").value / 100 //gets the oninput value
       document.getElementById('OutputId4').innerHTML = danceability //displays this value to the html page
     }
 
     function myFunction5() {
-      energy = 0.5;
-      // energy = document.getElementById("InputId5").value / 100 //gets the oninput value
+      //energy = 0.5;
+      energy = document.getElementById("InputId5").value / 100 //gets the oninput value
       document.getElementById('OutputId5').innerHTML = energy //displays this value to the html page
     }
 
     function myFunction6() {
-      mood = 0.5;
-      // mood = document.getElementById("InputId6").value / 100 //gets the oninput value
+      //mood = 0.5;
+      mood = document.getElementById("InputId6").value / 100 //gets the oninput value
       document.getElementById('OutputId6').innerHTML = mood //displays this value to the html page
     }
   }
