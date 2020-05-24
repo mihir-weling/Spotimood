@@ -1,0 +1,192 @@
+<!-- REAL -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SpotiMood for Spotify</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="style.css" rel="stylesheet">
+  <!-- loadLib("Analysis.js")
+  loadLib("app.js") -->
+
+</head>
+
+<body>
+  <script src="app.js" type="text/javascript"></script>
+  <div class="container">
+    <div class="title">
+      <div class="left-side">
+        <div class="Main-Title">
+          <h1> SpotiMood </h1>
+          <h4>Enhancing The Spotify Experience With Your Mood</h4>
+          <hr>
+        </div>
+      </div>
+      <div class="playlist">
+          <div class="loader">
+            <div class="inner-circle"></div>
+          </div>
+      </div>
+      <div class="right-side">
+        <div class="USER">
+          <div id="Login">
+            <a href="/login" class="btn btn-primary" style="color:#FFFFFF; text-decoration:none"> Log in with Spotify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Moods">
+      <div class="title">
+        <h1> Create Your Personalized Playlist |
+          <span> Pick base artists and target audio features to create a personalized playlist based on your existing playlists </span>
+        </h1>
+      </div>
+      <div class="sliders">
+
+        <div class="slide-container">
+          <form name="slider1">
+            <input type="range" name="InputName1" id="InputId1" value="50" min="1" max="100" oninput="OutputId1.value = InputId1.value">
+            <output name="OutputName1" id="OutputId1">50</output>
+          </form>
+          <p>Acousticness</p>
+        </div>
+
+        <div class="slide-container">
+          <form name="slider2">
+            <input type="range" name="InputName2" id="InputId2" value="50" min="1" max="100" oninput="OutputId2.value = InputId2.value">
+            <output name="OutputName2" id="OutputId2">50</output>
+          </form>
+          <p>Instrumentalness</p>
+        </div>
+
+
+        <div class="slide-container">
+          <form name="slider3">
+            <input type="range" name="InputName3" id="InputId3" value="75" min="50" max="100" oninput="OutputId3.value = InputId3.value">
+            <output name="OutputName3" id="OutputId3">75</output
+          </form>
+          <p>Tempo</p>
+        </div>
+
+
+        <div class="slide-container">
+          <form name="slider4">
+            <input type="range" name="InputName4" id="InputId4" value="50" min="1" max="100" oninput="OutputId4.value = InputId4.value">
+            <output name="OutputName4" id="OutputId4">50</output>
+          </form>
+          <p>Danceability</p>
+        </div>
+
+
+        <div class="slide-container">
+          <form name="slider5">
+            <input type="range" name="InputName5" id="InputId5" value="50" min="1" max="100" oninput="OutputId5.value = InputId5.value">
+            <output name="OutputName5" id="OutputId5">50</output>
+          </form>
+          <p>Energy</p>
+        </div>
+
+
+        <div class="slide-container">
+          <form name="slider6">
+            <input type="range" name="InputName6" id="InputId6" value="50" min="1" max="100" oninput="OutputId6.value = InputId6.value">
+            <output name="OutputName6" id="OutputId6">50</output>
+          </form>
+          <p>Mood</p>
+        </div>
+      </div>
+
+      <div class="search">
+        <form action="">
+          <input type="search" class="input1" placeholder="Search for 3 of your favorite songs (separate by commas)...">
+          <!-- <input type="submit" class="submit" value="Generate Playlist" onclick="createPlaylist()"> -->
+        </form>
+      </div>
+      <button class="submit" onclick="myFunction()">Generate Playlist</button>
+
+        <div id="myDIV">
+          <iframe src="https://open.spotify.com/embed/playlist/2IVWUlfoQFFVsMvzBOLdFI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+      <!-- <div id="Playlist"><iframe src="https://open.spotify.com/embed/playlist/2IVWUlfoQFFVsMvzBOLdFI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+      <script>
+        function displayPlaylist() {
+        var x = document.getElementById("Playlist");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+          }
+      </script> -->
+
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
+    </div>
+    </div>
+
+    <br>
+
+    <!-- <div class="Output">
+      <div class="title">
+        <h1> Rate Your Personalized Playlist |
+          <span>Regenerate playlists based on your liking</span>
+        </h1>
+      </div>
+
+      <div class="buttons">
+        <button id="like" onclick="alert('inser javascript here')"> <img src="like.png" alt="like button" align="center" style="width:40px;height:40px";> </button>
+        <button id="dislike" onclick="alert('inser javascript here')"> <img src="dislike.png" alt="dislike button" align="center" style="width:40px;height:40px";> </button>
+      </div>
+    </div>
+
+    <div class="Stats">
+      <div class="title">
+        <h1> Your Profile Features |
+          <span>Explore an in-depth look into your Spotify habits</span>
+        </h1>
+      </div>
+      <p>[INSERT SPOTIFY STATIIISTACKSS]</p>
+    </div> -->
+
+
+    <!-- <script src="Analysis.js"></script>
+    <script src="app.js"></script> -->
+  </div>
+  <!-- <script src="analysis.js" type="text/javascript"></script> -->
+</body>
+<!-- <div class = "main-container">
+        <div class = "content-container">
+            <img class = "logo" src = "assets/moodify-logo-min.png">
+            <div class = "tagline">Music for any feel</div>
+            <div class = "description">Sort your Spotify music by any mood you like
+                    and save them as playlists.
+            </div>
+            <a href = "https://accounts.spotify.com/authorize?client_id=cde538bfe1454a9b9cd59f0a872e65f0&redirect_uri=https:%2F%2Fmoooodify.com%2Fcallback.html%3F&scope=user-top-read%20playlist-modify-public&response_type=token&state=123">
+                <img src = "assets/spotify-logo-min.png">
+                Login with Spotify
+            </a>
+        </div>
+
+
+</div> -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/script.js"></script> -->
+<footer>
+  <img src="Logo.png" alt="Ram Logo" align="right">
+</footer>
+
+</html>

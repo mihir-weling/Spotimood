@@ -1,0 +1,144 @@
+/* Master Styles */
+body{
+    margin: 0px;
+    background: #333333;
+}
+
+h1 {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+h4 {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+}
+span {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+}
+p {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  text-indent: 42px;
+  justify-content: center;
+}
+
+.USER {
+  color: white;
+  background: #1DB954;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+
+/* slider modifications */
+.sliders{
+  display: flex;
+  justify-content: space-around;
+  background: #1DB954;
+}
+
+
+output{
+  color:white
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.myDiv{
+  display: flex;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Search bar styling */
+.search {
+  padding:30px;
+  display: flex;
+  justify-content: space-between;
+  align-content:
+}
+
+.input1 {
+    width: 400px;
+    height: 50px;
+}
+
+.submit{
+  background: #1DB954;
+  color: white;
+  border-radius: 100px;
+  height: 25px;
+}
+
+.button {
+  background: #1DB954;
+  border-radius: 100px;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  weight: 900;
+  font-size: 15px;
+  outline: none;
+}
+
+#like{
+  background-color: #1DB954;
+  border-radius: 200px;
+  padding:10px;
+}
+
+#dislike{
+  background-color: #1DB954;
+  border-radius: 100px;
+  padding:10px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.right-side:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.right-side:hover .USER {background-color: #3e8e41;}
+
+/* Adjustments to like and dislike button and regenerated playlists */
+.buttons{
+  text-indent: 42px;
+}
+/* Title Style */
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    font-family: san-serif

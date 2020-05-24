@@ -1,0 +1,18 @@
+Classes and Data Structures
+  Index.html
+
+  Style.css
+
+  App
+    - This is where the main app's functionality will take place
+
+  Analysis
+    - This is where songs will be analyzed and assigned a mood and playlist fit
+
+  Recommend
+    - This is where songs that are analyzed get placed into playlists
+
+
+Algorithms
+
+Persistence
